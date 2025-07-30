@@ -1,0 +1,166 @@
+/* login.css */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* centro horizontal */
+  align-items: center;     /* centro vertical */
+  background-color: #030303;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Luzes de fundo */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  filter: blur(120px);
+  z-index: 0;
+}
+
+body::before {
+  top: -150px;
+  left: -150px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.15), transparent 70%);
+}
+
+body::after {
+  bottom: -100px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(158, 96, 255, 0.12), transparent 70%);
+}
+
+/* Formulário */
+.formulario {
+  z-index: 2;
+  background-color: #049043;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(5, 5, 5, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 320px;
+  min-height: 420px;
+  box-sizing: border-box;
+}
+
+/* Inputs */
+input {
+  padding: 0.75rem;
+  background-color: #0c0c0c;
+  color: white;
+  border: 1px solid #b388ff;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #e0d0ff;
+}
+
+/* Botão */
+button {
+  padding: 0.75rem;
+  background-color: #0f0e10;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #131215;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Texto auxiliar */
+p {
+  text-align: center;
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+/* Link */
+a {
+  color: #0c0b0e;
+  text-decoration: none;
+}
+
+/* Campo senha com ícone */
+.senha-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.senha-container input {
+  padding: 0.75rem;
+  background-color: #3e1a72;
+  color: white;
+  border: 1px solid #b388ff;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ver-senha {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #ccc;
+}.login-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #030303;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.login-container::before,
+.login-container::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  filter: blur(120px);
+  z-index: 0;
+}
+
+.login-container::before {
+  top: -150px;
+  left: -150px;
+  background: radial-gradient(circle, rgba(112, 255, 96, 0.15), transparent 70%);
+}
+
+.login-container::after {
+  bottom: -100px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(158, 96, 255, 0.12), transparent 70%);
+}
