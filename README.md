@@ -1,44 +1,38 @@
-# 🌤️ Painel Climático — App Fullstack com React + Vite + Node.js
+# SkyDash – Frontend
 
-Este é um painel administrativo completo que permite:
-
-- ✅ Fazer login e registro com autenticação JWT
-- 🌤️ Consultar clima de cidades via WeatherAPI
-- 📊 Ver gráfico de variação de temperatura com Chart.js
-- 👥 Gerenciar usuários (CRUD completo)
-- 🧭 Navegar por um menu superior fixo (responsivo)
-- 🔒 Acessar rotas protegidas com controle de sessão
-
----
+Frontend da aplicação desenvolvida como parte de um teste técnico Fullstack. A interface consome a API REST da aplicação backend, permitindo autenticação, gerenciamento de usuários e visualização de dados climáticos.
 
 ## 🚀 Tecnologias Utilizadas
 
-### Frontend
-- [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
-- [React Router Dom](https://reactrouter.com/)
-- [Axios](https://axios-http.com/)
-- [Chart.js](https://www.chartjs.org/)
-- [React Icons](https://react-icons.github.io/react-icons/)
-- CSS puro customizado
+- **React.js**
+- **Vite**
+- **React Router DOM**
+- **Axios**
+- **Tailwind CSS**
+- **React Icons**
+- **Gráficos com Chart.js**
+- **Arquitetura por páginas e componentes**
 
-### Backend (repositório separado)
-- Node.js + Express
-- MySQL com Prisma
-- JWT para autenticação
-- WeatherAPI (consulta externa de clima)
+## 📁 Estrutura
 
----
+- `src/api/`: chamadas HTTP com Axios
+- `src/assets/`: imagens e recursos estáticos
+- `src/components/`: componentes reutilizáveis (MenuSuperior, WeatherChart, etc.)
+- `src/pages/`: páginas da aplicação (Login, Dashboard, Cadastro, etc.)
+- `src/styles/`: arquivos CSS globais
+- `App.jsx`: estrutura principal de rotas e layout
+- `main.jsx`: ponto de entrada da aplicação
 
-## 📦 Como rodar o projeto
-
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
-
-# Instale as dependências
+## 📦 Instalação
 npm install
 
-# Rode o projeto localmente
+rode o projeto 
+
 npm run dev
+
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/FelipeLopes069/Projeto-Teste-Frontend.git
+cd Projeto-Teste-Frontend
