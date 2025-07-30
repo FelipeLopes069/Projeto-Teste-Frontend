@@ -8,7 +8,7 @@ Frontend da aplicação desenvolvida como parte de um teste técnico Fullstack. 
 - **Vite**
 - **React Router DOM**
 - **Axios**
-- **Tailwind CSS**
+- **CSS**
 - **React Icons**
 - **Gráficos com Chart.js**
 - **Arquitetura por páginas e componentes**
